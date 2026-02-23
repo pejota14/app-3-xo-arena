@@ -1,0 +1,64 @@
+.home-web {
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - 50px);
+    color: var(--main-color);
+    overflow: scroll;
+}
+
+.app-name {
+    font-size: 40px;
+    color: var(--main-color);
+    margin: 20px 0;
+    text-align: center;
+    margin: 30px;
+}
+
+.app-icon {
+    margin: 50px;
+    text-align: center;
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+}
+
+.app-resume {
+    font-size: 18px;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: var(--main-color);
+    text-align: center;
+    margin: 20px;
+    font-weight: 100;
+    white-space: pre-line;
+}
+
+.store-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1000;
+    color: white;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 20px;
+    cursor: pointer;
+}

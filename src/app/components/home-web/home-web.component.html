@@ -1,0 +1,22 @@
+<div class="home-web">
+    <h1 class="app-name">XO Arena</h1>
+    <div class="app-icon">
+        <img class="icon" src="icon-only.png" alt="App Icon">
+    </div>
+    <p class="app-resume">
+        {{ 'APP_RESUME' | translate }}
+    </p>
+    <div ></div>
+    <div class="store-buttons">
+        <a [href]="appStoreLink" target="_blank" class="d-flex justify-content-center" [style.margin]="'15px'">
+            <img [style.objectFit]="'contain'" [style.height]="'70px'" src="AppStore.svg" alt="Get it on App Store" />
+        </a>
+        <a [href]="playStoreLink" target="_blank" class="d-flex justify-content-center" [style.margin]="'15px'">
+            <img  [style.objectFit]="'contain'" [style.minWidth]="'200px'" [style.height]="'70px'" src="GooglePlay.png" alt="Get it on Google Play" />
+        </a>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer-link" [routerLink]="'/gdpr'">{{ 'PRIVACY_POLICY' | translate }}</div>
+</footer>

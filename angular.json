@@ -1,0 +1,245 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "cli": {
+    "packageManager": "npm"
+  },
+  "newProjectRoot": "projects",
+  "projects": {
+    "app-3-xo-arena": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "",
+      "sourceRoot": "src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/app-3-xo-arena",
+            "index": "src/index.html",
+            "browser": "src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "tsconfig.app.json",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "public"
+              },
+              {
+                "glob": "**/*",
+                "input": "resources"
+              },
+              {
+                "glob": ".htaccess",
+                "input": "src"
+              }
+            ],
+            "styles": [
+              "src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/back/dev.environment.ts",
+                  "with": "src/environments/back/prod.environment.ts"
+                }
+              ],
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "4mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "4kB",
+                  "maximumError": "8kB"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            },
+            "android": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/back/dev.environment.ts",
+                  "with": "src/environments/back/prod.environment.ts"
+                },
+                {
+                  "replace": "src/environments/front/base.environment.ts",
+                  "with": "src/environments/front/android.environment.ts"
+                }
+              ],
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "4mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "4kB",
+                  "maximumError": "8kB"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "android-dev": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/front/base.environment.ts",
+                  "with": "src/environments/front/android.environment.ts"
+                }
+              ],
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "4mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "4kB",
+                  "maximumError": "8kB"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "ios": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/back/dev.environment.ts",
+                  "with": "src/environments/back/prod.environment.ts"
+                },
+                {
+                  "replace": "src/environments/front/base.environment.ts",
+                  "with": "src/environments/front/ios.environment.ts"
+                }
+              ],
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "4mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "4kB",
+                  "maximumError": "8kB"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "ios-dev": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/front/base.environment.ts",
+                  "with": "src/environments/front/ios.environment.ts"
+                }
+              ],
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "4mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "4kB",
+                  "maximumError": "8kB"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "web": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/back/dev.environment.ts",
+                  "with": "src/environments/back/prod.environment.ts"
+                },
+                {
+                  "replace": "src/environments/front/base.environment.ts",
+                  "with": "src/environments/front/web.environment.ts"
+                }
+              ],
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "4mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "4kB",
+                  "maximumError": "8kB"
+                }
+              ],
+              "outputHashing": "all"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "app-3-xo-arena:build:production"
+            },
+            "development": {
+              "buildTarget": "app-3-xo-arena:build:development"
+            },
+            "android": {
+              "buildTarget": "app-3-xo-arena:build:android"
+            },
+            "android-dev": {
+              "buildTarget": "app-3-xo-arena:build:android-dev"
+            },
+            "ios": {
+              "buildTarget": "app-3-xo-arena:build:ios"
+            },
+            "ios-dev": {
+              "buildTarget": "app-3-xo-arena:build:ios-dev"
+            },
+            "web": {
+              "buildTarget": "app-3-xo-arena:build:web"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "tsconfig.spec.json",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "public"
+              }
+            ],
+            "styles": [
+              "src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
+    }
+  }
+}

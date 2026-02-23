@@ -1,0 +1,32 @@
+{
+  "APP_RESUME": "Enjoy the classic Tic Tac Toe on your device with a fast, intuitive, and engaging experience.\n\nTest your strategy in dynamic matches where every move counts. Challenge your friends on the same device.\n\nFeatures:\n• Player vs Player mode\n• Fast and smooth matches\n• Clean and user-friendly design\n\nPerfect for all ages. Play anytime, anywhere.\n\nCan you get three in a row before your opponent?",
+  "PRIVACY_POLICY": "Privacy Policy and GDPR",
+  "SECTIONS": {
+    "AUTOMATED_DECISIONS_CONTENT": "No automated decisions, including profiling, are made that could significantly affect you.",
+    "AUTOMATED_DECISIONS_TITLE": "Automated Decisions",
+    "COMPLAINTS_CONTENT": "If you believe your rights have been violated, you have the right to file a complaint with the competent supervisory authority.",
+    "COMPLAINTS_TITLE": "Complaints",
+    "CONSENT_WITHDRAWAL_CONTENT": "You can withdraw your consent at any time without affecting the lawfulness of processing based on consent before its withdrawal.",
+    "CONSENT_WITHDRAWAL_TITLE": "Withdrawal of Consent",
+    "DATA_DELETION_CONTENT": "You can delete your account by logging in with your user credentials and navigating to the user section to click the delete account button. Upon confirmation, your account and data will be fully deleted. If you experience any issues, please contact our Data Protection Officer at: <b>%s</b>.",
+    "DATA_DELETION_TITLE": "Data Deletion",
+    "DATA_TRANSFER_CONTENT": "If data is transferred to third countries, we ensure appropriate safeguards, such as standard contractual clauses or certification under the EU-U.S. Privacy Shield.",
+    "DATA_TRANSFER_TITLE": "Data Transfers to Third Countries",
+    "DPO_CONTENT": "For any inquiries related to data protection, please contact our Data Protection Officer at: <b>%s</b>.",
+    "DPO_TITLE": "Contact Information of the Data Protection Officer",
+    "IDENTITY_CONTENT": "The data controller is the owner of the application. You can contact us via email: <b>%s</b>.",
+    "IDENTITY_TITLE": "Identity and Contact Information of the Data Controller",
+    "LEGAL_BASE_CONTENT": "The processing of your data is based on your consent, given by accepting our terms and conditions. We may also process data based on our legitimate interest to improve our services.",
+    "LEGAL_BASE_TITLE": "Legal Basis for Processing",
+    "PROCESSING_CONTENT": "We collect user data to provide a more personalized service and improve the application's capabilities. This includes, but is not limited to, content personalization, enhancing user experience, and conducting market analysis.",
+    "PROCESSING_TITLE": "Processing Activities and Their Purposes",
+    "RECIPIENTS_CONTENT": "Your data may be shared with third parties solely for the purposes described above, such as analytics providers, advertising services, or newsletter distribution. We do not sell your personal data to third parties.",
+    "RECIPIENTS_TITLE": "Data Recipients",
+    "RETENTION_CONTENT": "Your data will be retained as long as necessary to fulfill the purposes for which it was collected, or until you request its deletion.",
+    "RETENTION_TITLE": "Data Retention Period",
+    "RIGHTS_CONTENT": "You have the right to access, rectify, delete, and object to the processing of your data, as well as to request data portability or restriction of processing. You can exercise these rights by contacting us at: <b>%s</b>.",
+    "RIGHTS_TITLE": "Rights of the Data Subject",
+    "SPECIAL_DATA_CONTENT": "We do not process special categories of personal data, such as sensitive data or data about minors, unless provided with your explicit consent.",
+    "SPECIAL_DATA_TITLE": "Special Categories of Personal Data"
+  }
+}

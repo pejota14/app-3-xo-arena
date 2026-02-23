@@ -1,0 +1,32 @@
+{
+  "APP_RESUME": "Disfruta del clásico 3 en raya en tu dispositivo con una experiencia rápida, intuitiva y entretenida.\n\nPon a prueba tu estrategia en partidas dinámicas donde cada movimiento cuenta. Desafía a tus amigos en el mismo dispositivo.\n\nCaracterísticas:\n• Modo jugador contra jugador\n• Partidas rápidas y fluidas\n• Diseño limpio y fácil de usar\n\n\nIdeal para todas las edades. Perfecto para jugar en cualquier momento y lugar.\n\n¿Serás capaz de conseguir tres en línea antes que tu rival?",
+  "PRIVACY_POLICY": "Política de Privacidad y RGPD",
+  "SECTIONS": {
+    "AUTOMATED_DECISIONS_CONTENT": "No se toman decisiones automatizadas, incluida la elaboración de perfiles, que puedan afectarle significativamente.",
+    "AUTOMATED_DECISIONS_TITLE": "Decisiones Automatizadas",
+    "COMPLAINTS_CONTENT": "Si considera que sus derechos han sido vulnerados, tiene derecho a presentar una reclamación ante la autoridad de control competente.",
+    "COMPLAINTS_TITLE": "Reclamaciones",
+    "CONSENT_WITHDRAWAL_CONTENT": "Puede retirar su consentimiento en cualquier momento, sin que ello afecte a la licitud del tratamiento basado en el consentimiento previo a su retirada.",
+    "CONSENT_WITHDRAWAL_TITLE": "Retirada del Consentimiento",
+    "DATA_DELETION_CONTENT": "Puede eliminar su cuenta iniciando sesión con sus credenciales de usuario y accediendo a la sección de usuario para pulsar el botón de eliminar cuenta. Tras la confirmación, su cuenta y sus datos serán eliminados por completo. Si experimenta algún problema, póngase en contacto con nuestro Delegado de Protección de Datos en: <b>%s</b>.",
+    "DATA_DELETION_TITLE": "Eliminación de Datos",
+    "DATA_TRANSFER_CONTENT": "Si los datos se transfieren a terceros países, garantizamos las salvaguardas adecuadas, como las cláusulas contractuales tipo o la certificación conforme al Marco de Privacidad de Datos UE-EE. UU.",
+    "DATA_TRANSFER_TITLE": "Transferencias de Datos a Terceros Países",
+    "DPO_CONTENT": "Para cualquier consulta relacionada con la protección de datos, puede contactar con nuestro Delegado de Protección de Datos en: <b>%s</b>.",
+    "DPO_TITLE": "Datos de Contacto del Delegado de Protección de Datos",
+    "IDENTITY_CONTENT": "El responsable del tratamiento es el titular de la aplicación. Puede contactarnos por correo electrónico en: <b>%s</b>.",
+    "IDENTITY_TITLE": "Identidad y Datos de Contacto del Responsable del Tratamiento",
+    "LEGAL_BASE_CONTENT": "El tratamiento de sus datos se basa en su consentimiento, otorgado al aceptar nuestros términos y condiciones. También podremos tratar sus datos en base a nuestro interés legítimo para mejorar nuestros servicios.",
+    "LEGAL_BASE_TITLE": "Base Jurídica del Tratamiento",
+    "PROCESSING_CONTENT": "Recopilamos datos de los usuarios para ofrecer un servicio más personalizado y mejorar las funcionalidades de la aplicación. Esto incluye, entre otros, la personalización de contenidos, la mejora de la experiencia de usuario y la realización de análisis de mercado.",
+    "PROCESSING_TITLE": "Actividades de Tratamiento y sus Finalidades",
+    "RECIPIENTS_CONTENT": "Sus datos podrán ser compartidos con terceros únicamente para los fines descritos anteriormente, como proveedores de análisis, servicios publicitarios o distribución de boletines informativos. No vendemos sus datos personales a terceros.",
+    "RECIPIENTS_TITLE": "Destinatarios de los Datos",
+    "RETENTION_CONTENT": "Sus datos se conservarán durante el tiempo necesario para cumplir con los fines para los que fueron recopilados o hasta que solicite su supresión.",
+    "RETENTION_TITLE": "Plazo de Conservación de los Datos",
+    "RIGHTS_CONTENT": "Tiene derecho a acceder, rectificar y suprimir sus datos, así como a oponerse a su tratamiento, solicitar la portabilidad de los datos o la limitación del tratamiento. Puede ejercer estos derechos contactándonos en: <b>%s</b>.",
+    "RIGHTS_TITLE": "Derechos del Interesado",
+    "SPECIAL_DATA_CONTENT": "No tratamos categorías especiales de datos personales, como datos sensibles o datos de menores, salvo que contemos con su consentimiento explícito.",
+    "SPECIAL_DATA_TITLE": "Categorías Especiales de Datos Personales"
+  }
+}
