@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { SettingsComponent } from '../settings/settings.component';
+import { AdsService } from '../../services/ads/ads.service';
 
 type Player = 'X' | 'O' | null;
 type GameMode = 'PVP' | 'AI';
@@ -31,11 +32,17 @@ export class TicTacToeComponent {
   humanPlayer: Exclude<Player, null> = 'X';
   aiPlayer: Exclude<Player, null> = 'O';
 
+  gamesCount = signal(0);
+
   winningCombos = [
     [0, 1, 2], [3, 4, 5], [6, 7, 8],
     [0, 3, 6], [1, 4, 7], [2, 5, 8],
     [0, 4, 8], [2, 4, 6]
   ];
+
+  constructor(private ads: AdsService) {
+    this.gamesCount.set(Number(localStorage.getItem('gamesPlayed')) || 0);
+  }
 
   makeMove(index: number): void {
     if (this.board[index] || this.winner || this.isDraw) return;
@@ -77,9 +84,20 @@ export class TicTacToeComponent {
   }
 
   resetGame(): void {
+    if (this.gamesCount() % 10 === 0) {
+      this.ads.showInterstitial().finally(() => {
+        this.startTimeout();
+      });
+    } else {
+      this.startTimeout();
+    }
+    this.gamesCount.update(v => v + 1);
+    localStorage.setItem('gamesPlayed', String(this.gamesCount()));
+  }
+
+  private startTimeout() {
     const boardElement = document.querySelector('.board');
     boardElement?.classList.add('erasing');
-
     setTimeout(() => {
       this.board = Array(9).fill(null);
       this.winner = null;
