@@ -1,0 +1,17 @@
+<app-gear (click)="openSettings()"></app-gear>
+@if (showSettings) {
+<div class="settings-component">
+  <div class="settings-container">
+    <div class="ol-0" (click)="closeSettings()">
+      <svg [style.height]="'30px'" [style.width]="'30px'" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 490">
+        <g [attr.fill]="'#cccccc'" [attr.stroke-width]="'40px'">
+          <polygon
+            points="456.851,0 245,212.564 33.149,0 0.708,32.337 212.669,245.004 0.708,457.678 33.149,490 245,277.443 456.851,490 489.292,457.678 277.331,245.004 489.292,32.337 " />
+        </g>
+      </svg>
+    </div>
+    <div class="title">XO Arena</div>
+    <div class="setting" [routerLink]="'/gdpr'">{{ 'PRIVACY_POLICY' | translate}}</div>
+  </div>
+</div>
+}

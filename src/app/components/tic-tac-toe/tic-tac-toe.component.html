@@ -1,0 +1,69 @@
+<div class="game-container">
+    <app-settings></app-settings>
+    <div class="header">
+        <h2>XO Arena</h2>
+
+        <div class="controls">
+            <label class="label">
+                Mode:
+                <select [(ngModel)]="gameMode" (change)="resetGame()">
+                    <option value="PVP">Player vs Player</option>
+                    <option value="AI">Player vs AI</option>
+                </select>
+            </label>
+
+            @if (gameMode === 'AI') {
+            <label class="label">
+                Difficulty:
+                <select [(ngModel)]="difficulty" (change)="resetGame()">
+                    <option value="EASY">Easy</option>
+                    <option value="MEDIUM">Medium</option>
+                    <option value="HARD">Hard</option>
+                </select>
+            </label>
+            }
+        </div>
+
+        <div class="status">
+            @if (gameMode === 'AI') {
+            <div class="role">You are: {{ humanPlayer }}</div>
+            }
+            @if (winner) {
+            <div class="result">Player {{ winner }} wins!</div>
+            }
+            @if (isDraw) {
+            <div class="result">It's a draw!</div>
+            }
+            @if (!winner && !isDraw) {
+            <div>Player {{ currentPlayer }}'s turn</div>
+            }
+        </div>
+    </div>
+
+    <div class="board-container">
+        <div class="board">
+            @for (cell of board; track $index) {
+            <div class="cell" (click)="makeMove($index)">
+                <ng-container [ngSwitch]="cell">
+
+                    <svg *ngSwitchCase="'X'" viewBox="0 0 100 100" class="chalk-svg x">
+                        <line x1="20" y1="20" x2="80" y2="80" class="chalk-line"></line>
+                        <line x1="80" y1="20" x2="20" y2="80" class="chalk-line delay"></line>
+                    </svg>
+
+                    <svg *ngSwitchCase="'O'" viewBox="0 0 100 100" class="chalk-svg circle o">
+                        <circle cx="50" cy="50" r="30" class="chalk-circle"></circle>
+                    </svg>
+
+                </ng-container>
+            </div>
+            }
+            <div class="grid-line v1"></div>
+            <div class="grid-line v2"></div>
+            <div class="grid-line h1"></div>
+            <div class="grid-line h2"></div>
+        </div>
+    </div>
+
+    <button class="reset-btn" (click)="resetGame()">Restart</button>
+</div>

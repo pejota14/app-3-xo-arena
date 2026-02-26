@@ -1,0 +1,44 @@
+.settings-component {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10001;
+}
+
+.settings-container {
+    background-color: white;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #333;
+    position: relative;
+}
+
+.setting {
+    font-size: 18px;
+    padding: 15px 0;
+    color: var(--main-color);
+}
+
+.title {
+    font-size: 22px;
+    padding: 5px 0 15px 0;
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+.ol-0 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    -webkit-tap-highlight-color: transparent;
+}

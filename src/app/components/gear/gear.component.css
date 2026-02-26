@@ -1,0 +1,6 @@
+svg {
+    position: absolute;
+    top: calc(10px + var(--sat));
+    left: 10px;
+    z-index: 10001;
+}
