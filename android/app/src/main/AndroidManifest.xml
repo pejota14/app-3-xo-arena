@@ -9,7 +9,7 @@
         android:theme="@style/AppTheme">
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-6346021433119332~2564855369"
+            android:value="ca-app-pub-6346021433119332~9069923072"
         />
 
         <meta-data android:name="com.google.android.gms.ads.DELAY_APP_MEASUREMENT_INIT" android:value="true" />
